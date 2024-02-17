@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+  <title>Verificador de Idade</title>
+</head>
+<body>
+  <header>
+    <h1>Verificador de Idade</h1>
+  </header>
+  <section>
+    <div>
+      <p>Ano de Nascimento:
+        <!-- Valor mínimo aceito = 0-->
+        <input type="number" name="txtano" id="txtano" min="0">
+      </p>
+      <p>Sexo:
+        <!-- input:radio = cria uma bolinha para marcar -->
+        <input type="radio" name="radsex" id="masculino" checked>
+        <!-- label é a mensagem que aparece em frente da bolinha, 
+          que está ligada a bolinha -->
+        <label for="masculino">Masculino</label>
+        <input type="radio" name="radsex" id="feminino">
+        <label for="feminino">Feminino</label>
+      </p>
+      <p>
+        <input type="button" value="Verificar" onclick="verificar()">
+      </p>
+    </div>
+    <div id="resposta">
+      Preencha os dados acima para ver o resultado!
+    </div>
+  </section>
+  <footer>
+    <p>&copy; CursoemVideo</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <title>Primeiros passos com DOM</title>
+  <style>
+    body {
+      background-color: rgb(118, 241, 235);
+      color: black;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+  </style>
+</head>
+<body>
+  <h1>Iniciando estudos DOM</h1>
+  <p>Aqui vai o resultado</p>
+  <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript.</p>
+  <div class="msg">Clique em mim</div>
+
+  <script>
+    /*"window.document" é o caminho onde o método ".getElementsByTagName()" 
+    vai procurar a tag especificada
+    O número entre os colchetes define qual é a tag específica que você quer 
+    que o método encontre. 
+    A contagem começa de 0 = primeiro elemento, 1 = segundo elemento e assim 
+    sucessivamente*/
+    var p1 = window.document.getElementsByTagName('p')[0];
+    /*Selecionando o body na variável "corpo"*/
+    corpo.style.background = 'white'; 
+    /*Mudando a cor do background da página através do JavaScript*/
+    var corpo = window.document.body;
+    /*Novamente o alvo é o "window.document", mas dessa vez o ".write()" vai 
+    escrever dentro do document
+    ".innerHTML" vai puxar o texto que está dentro 
+    da tag selecionada com a formatação (tags filhas) que está no documento HTML
+    Já o ".innerText" puxa o texto que está dentro 
+    da tag selecionada porém sem a formatação 
+    (tags filhas) que está no documento HTML*/
+    window.document.write(`Está escrito assim: ${p1.innerHTML}`);
+
+
+  </script>
+</body>
+</html>

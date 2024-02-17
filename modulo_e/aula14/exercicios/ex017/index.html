@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+  <title>Tabuada</title>
+</head>
+
+<body>
+  <header>
+    <h1>Tabuada</h1>
+  </header>
+  <section>
+    <div>
+      <p>Número: <input type="number" name="txtnumero" id="txtnumero">
+        <input type="button" value="Gerar Tabuada" onclick="calcular()">
+      </p>
+      <p></p>
+    </div>
+    <div>
+      <!--Select cria uma lista de seleção, 
+        nesse caso o size é 10 porque a tabuada tem 10 multiplicações-->
+      <select name="tabuada" id="seltabuada" size="10">
+        <!--Essa é uma das opções da lista, 
+          nesse caso estamos usando para deixar mais bonito-->
+        <option>Digite um número acima</option>
+      </select>
+    </div>
+  </section>
+  <footer>
+    <p>&copy; CursoemVideo</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>

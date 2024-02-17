@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <title>Here's Brazil</title>
+</head>
+<body>
+  <h1>É brasileiro ou não é?</h1>
+  Em qual país você nasceu? <input type="text" name="txtpais" id="txtpais">
+   <input type="button" value="Verificar" onclick="clicar()">
+  <div id="resposta"></div>
+
+  <script>
+    function clicar() {
+      var txtpais = window.document.querySelector('input#txtpais');
+      var resposta = window.document.querySelector('div#resposta');
+      var pais = txtpais.value;
+      resposta.innerHTML = `Nascido em <strong>${pais}</strong>.`;
+      if (pais == 'Brasil') {
+        resposta.innerHTML += `Você é <strong>brasileiro(a)</strong>!`;
+      } else {
+        resposta.innerHTML += `Você é <strong>estrangeiro(a)</strong>!`;
+      }
+    }
+  </script>
+</body>
+</html>
